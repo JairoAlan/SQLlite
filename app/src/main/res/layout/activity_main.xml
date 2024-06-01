@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/etid"
+        android:layout_width="326dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="60dp"
+        android:ems="10"
+        android:hint="ID"
+        android:inputType="text"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etnombre"
+        android:layout_width="322dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="52dp"
+        android:ems="10"
+        android:hint="Nombre"
+        android:inputType="text"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etid" />
+
+    <EditText
+        android:id="@+id/ettelefono"
+        android:layout_width="322dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="48dp"
+        android:ems="10"
+        android:hint="Telefono"
+        android:inputType="text"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etnombre" />
+
+    <Button
+        android:id="@+id/btningresar"
+        android:layout_width="113dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="56dp"
+        android:background="#8E8B8B"
+        android:text="Insertar"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ettelefono" />
+
+    <Button
+        android:id="@+id/btnbuscar"
+        android:layout_width="116dp"
+        android:layout_height="97dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="52dp"
+        android:background="#AAA2A2"
+        android:text="Buscar"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ettelefono" />
+
+    <Button
+        android:id="@+id/btneliminar"
+        android:layout_width="113dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="28dp"
+        android:background="#A19A9A"
+        android:text="Eliminar"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btningresar" />
+
+    <Button
+        android:id="@+id/btnactualizar"
+        android:layout_width="112dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="56dp"
+        android:background="#958B8B"
+        android:text="Actualizar"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnbuscar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
